@@ -75,6 +75,16 @@
     }
     var domStr = `
   <div style="
+    margin-top: 0px;
+    padding: 0px 0px ;
+    font-size: 0px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0px;
+    border: 0px solid #eeeeee;
+    background-color: #3D8AC7;
+  " id="m3u8-jump">跳转下载</div>
+  <div style="
     margin-top: 6px;
     padding: 6px 10px ;
     font-size: 18px;
@@ -144,7 +154,6 @@
           }
 
           // 注入html
-          document.getElementById("root").remove()
           let $section = document.createElement('section')
           $section.innerHTML = `${dom}`
           $section.style.width = '100%'
@@ -157,6 +166,7 @@
           $section.style.overflowY = 'auto'
           $section.style.backgroundColor = 'white'
           document.body.appendChild($section);
+          document.getElementById("root").remove()
 
           // 加载 ASE 解密
           let $ase = document.createElement('script')
@@ -175,7 +185,7 @@
           document.body.appendChild($vue);
           document.body.appendChild($mp4);
           document.body.appendChild($ase);
-          alert('注入成功，请滚动到页面底部')
+          alert('请点击转码为MP4下载')
         },
       })
     })
