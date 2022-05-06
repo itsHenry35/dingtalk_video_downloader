@@ -1,13 +1,10 @@
 // ==UserScript==
-// @name         m3u8-downloader
+// @name         dingtalk_video_downloader
 // @namespace    https://github.com/Momo707577045/m3u8-downloader
-// @version      0.5.0
-// @description  https://github.com/Momo707577045/m3u8-downloader 配套插件
-// @author       Momo707577045
-// @include      *
-// @exclude      http://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index.html
-// @exclude      https://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index.html
-// @exclude      https://www.bilibili.com/*
+// @version      0.5.0_itshenry
+// @description  An edited branch of https://github.com/Momo707577045/m3u8-downloader
+// @author       Momo707577045, itsHenry
+// @include      *://*.dingtalk.com/*
 // @grant        none
 // @run-at document-start
 // ==/UserScript==
@@ -86,17 +83,7 @@
     border-radius: 4px;
     border: 1px solid #eeeeee;
     background-color: #3D8AC7;
-  " id="m3u8-jump">跳转下载</div>
-  <div style="
-    margin-top: 6px;
-    padding: 6px 10px ;
-    font-size: 18px;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
-    border: 1px solid #eeeeee;
-    background-color: #3D8AC7;
-  " id="m3u8-append">注入下载</div>
+  " id="m3u8-append">下载</div>
   <div style="
     margin-top: 4px;
     height: 34px;
@@ -157,6 +144,7 @@
           }
 
           // 注入html
+          document.getElementById("root").remove()
           let $section = document.createElement('section')
           $section.innerHTML = `${dom}`
           $section.style.width = '100%'
