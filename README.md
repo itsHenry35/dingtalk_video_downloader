@@ -6,6 +6,9 @@
 
 如需查看如何具体使用m3u8-downloader 请移步[m3u8-downloader/README.md](https://github.com/Momo707577045/m3u8-downloader/blob/master/README.md)
 
+配套食用教程视频：
+https://www.bilibili.com/video/BV1NF411M77S
+
 ### 食用教程
 - 浏览器中安装油猴Tampermonkey
 - Microsoft Edge : https://microsoftedge.microsoft.com/addons/detail/iikmkjmpaadaobahmlepeloendndfphd
