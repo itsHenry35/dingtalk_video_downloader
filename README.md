@@ -1,6 +1,7 @@
 # 钉钉回放下载器
 
 [![](https://data.jsdelivr.com/v1/package/gh/itsHenry35/dingtalk_video_downloader/badge)](https://www.jsdelivr.com/package/gh/itsHenry35/dingtalk_video_downloader)
+![Github stars](https://img.shields.io/github/stars/itsHenry35/dingtalk_video_downloader.svg)
 
 本项目仅限于下载 **在线课堂** 回放视频
 
