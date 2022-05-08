@@ -1,5 +1,7 @@
 # 钉钉回放下载器
 
+[![](https://data.jsdelivr.com/v1/package/gh/itsHenry35/dingtalk_video_downloader/badge)](https://www.jsdelivr.com/package/gh/itsHenry35/dingtalk_video_downloader)
+
 本项目仅限于下载 **在线课堂** 回放视频
 
 特别鸣谢：[m3u8-downloader](https://github.com/Momo707577045/m3u8-downloader/)
